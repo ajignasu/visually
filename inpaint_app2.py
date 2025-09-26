@@ -12,7 +12,7 @@ import os
 
 # Initialize OpenAI client - you can set your API key here or as an environment variable
 # Option 1: Set directly (not recommended for production)
-client = OpenAI(api_key="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")
+client = OpenAI(api_key="YOUR KEY GOES HERE")
 
 # Option 2: Set from environment variable (recommended)
 # client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
@@ -353,4 +353,5 @@ with gr.Blocks() as demo:
     """)
 
 # Add this at the bottom to help users set up their API key
+
 demo.launch()
